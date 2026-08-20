@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>//Pelajari Selengkapnya/Code</title>
+    <link rel="stylesheet" href="css/pelajari.css">
+</head>
+<body>
+    <div class="toolbar">
+    <button id="darkToggle">🌙 Dark Mode</button>
+</div>
+
+<section class="materi-page">
+
+<h1>Mini VS Code Learning</h1>
+
+<!-- HTML BOX -->
+<div class="code-box">
+
+    <div class="editor-top">
+        <div class="dots">
+            <span class="red"></span>
+            <span class="yellow"></span>
+            <span class="green"></span>
+        </div>
+        <span>HTML File</span>
+    </div>
+
+    <div class="code-content" id="htmlCode">
+&lt;h1&gt;Hello World&lt;/h1&gt;
+&lt;p&gt;Belajar HTML&lt;/p&gt;
+    </div>
+
+    <div class="code-actions">
+        <button onclick="copyCode('htmlCode')">Copy</button>
+    </div>
+
+</div>
+
+<!-- CSS BOX -->
+<div class="code-box">
+
+    <div class="editor-top">
+        <div class="dots">
+            <span class="red"></span>
+            <span class="yellow"></span>
+            <span class="green"></span>
+        </div>
+        <span>CSS File</span>
+    </div>
+
+    <div class="code-content" id="cssCode">
+body { background: white; }
+h1 { color: blue; }
+    </div>
+
+    <div class="code-actions">
+        <button onclick="copyCode('cssCode')">Copy</button>
+    </div>
+
+</div>
+
+<!-- JS BOX -->
+<div class="code-box">
+
+    <div class="editor-top">
+        <div class="dots">
+            <span class="red"></span>
+            <span class="yellow"></span>
+            <span class="green"></span>
+        </div>
+        <span>JavaScript File</span>
+    </div>
+
+    <div class="code-content" id="jsCode">
+function hello(){
+    alert("Hello World");
+}
+    </div>
+
+    <div class="code-actions">
+        <button onclick="copyCode('jsCode')">Copy</button>
+    </div>
+
+</div>
+
+</section>
+<script src="Js/pelajari.js"></script>
+</body>
+</html>

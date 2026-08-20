@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fredoka', sans-serif;
+}
+
+body{
+    background: #FFF7E7;
+    color: #111;
+    padding: 40px 8%;
+    transition: 0.3s;
+}
+
+/* HEADER TOOLBAR */
+
+.toolbar{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.toolbar button{
+    padding: 12px 18px;
+    border: 3px solid black;
+    background: #6BCBFF;
+    font-weight: bold;
+    border-radius: 14px;
+    box-shadow: 5px 5px 0px black;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.toolbar button:hover{
+    transform: translate(4px,4px);
+    box-shadow: 1px 1px 0px black;
+}
+
+/* TITLE */
+
+.materi-page h1{
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 10px;
+    background: #FF90E8;
+    width: fit-content;
+    margin-inline: auto;
+    padding: 12px 25px;
+    border: 4px solid black;
+    box-shadow: 8px 8px 0px black;
+    border-radius: 20px;
+}
+
+/* CODE BOX (VS CODE STYLE MINI EDITOR) */
+
+.code-box{
+    background: white;
+    border: 4px solid black;
+    border-radius: 20px;
+    margin-top: 30px;
+    box-shadow: 10px 10px 0px black;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.code-box:hover{
+    transform: translateY(-6px);
+}
+
+/* HEADER EDITOR */
+
+.editor-top{
+    background: #1e293b;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+/* DOTS */
+
+.dots{
+    display: flex;
+    gap: 6px;
+}
+
+.dots span{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.red{ background: #ff5f56; }
+.yellow{ background: #ffbd2e; }
+.green{ background: #27c93f; }
+
+/* CODE AREA */
+
+.code-content{
+    background: #0f172a;
+    color: #00ffcc;
+    padding: 20px;
+    font-family: monospace;
+    font-size: 14px;
+    overflow-x: auto;
+    white-space: pre;
+}
+
+/* BUTTON AREA */
+
+.code-actions{
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.code-actions button{
+    padding: 10px 14px;
+    border: 3px solid black;
+    border-radius: 12px;
+    background: #FFD93D;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 4px 4px 0px black;
+    transition: 0.2s;
+}
+
+.code-actions button:hover{
+    transform: translate(3px,3px);
+    box-shadow: 1px 1px 0px black;
+}
+
+/* DARK MODE */
+
+body.dark{
+    background: #0f172a;
+    color: white;
+}
+
+body.dark .code-box{
+    background: #1e293b;
+}
+
+body.dark .editor-top{
+    background: black;
+}
+
+body.dark .code-actions button{
+    background: #FF90E8;
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 600px){
+    body{
+        padding: 20px;
+    }
+
+    .materi-page h1{
+        font-size: 26px;
+    }
+}
